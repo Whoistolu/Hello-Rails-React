@@ -14,23 +14,23 @@
  *= require_self
  */
 
- .grettingDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
- }
+.grettingDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
 
- .getThingsBtn {
-    color: white;
-    background-color: blue;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
- }
+.getThingsBtn {
+  color: white;
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
 
- .getThingsBtn:hover {
+.getThingsBtn:hover {
   background-color: #4CAF50;
   color: white;
 }
