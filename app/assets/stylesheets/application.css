@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+ .grettingDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+ }
+
+ .getThingsBtn {
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+ }
+
+ .getThingsBtn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.thingsClass {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px;
+}
+
+.pTag {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  color: red;
+}

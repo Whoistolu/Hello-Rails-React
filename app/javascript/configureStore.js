@@ -8,10 +8,9 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 
 const inititalState = {
-  things: [
+  greetings: [
     {
-      name: "test",
-      guid: "12ttt3",
+      message: "anything",
     },
   ],
 };
@@ -20,7 +19,7 @@ function rootReducer(state, action) {
   console.log(action.type);
   switch (action.type) {
     case GET_THINGS_SUCCESS:
-      return { things: action.json.things };
+      return { greetings: action.json.greetings };
   }
   return state;
 }

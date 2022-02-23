@@ -11,7 +11,7 @@ function getThings() {
   console.log("getThngs() Action!!");
   return (dispatch) => {
     dispatch({ type: GET_THINGS_REQUEST });
-    return fetch(`v1/things.json`)
+    return fetch(`v1/greetings.json`)
       .then((response) => response.json())
       .then((json) => dispatch(getThingsSuccess(json)))
       .catch((error) => console.log(error));
@@ -27,8 +27,8 @@ export function getThingsSuccess(json) {
 
 class HelloWorld extends React.Component {
   render() {
-    const { things } = this.props;
-    const thingsList = things.map((thing) => {
+    const { greetings } = this.props;
+    const thingsList = [greetings].map((greeting) => {
       return (
         <List.Item className="list">
           <List.Icon
@@ -37,32 +37,34 @@ class HelloWorld extends React.Component {
             verticalAlign="middle"
           />
           <List.Content>
-            <List.Header as="a">{thing.name}</List.Header>
+            <List.Header as="a">{greeting.message}</List.Header>
+            <p>Display</p>
             <br />
-            <List.Description as="b">{thing.guid}</List.Description>
           </List.Content>
         </List.Item>
       );
     });
     return (
       <React.Fragment>
-        Greeting: {this.props.greeting}
-        <h1>hi</h1>
-        <buttton
-          className="getThingsBtn"
-          onClick={() => this.props.getThings()}
-        >
-          getThings
-        </buttton>
-        <br />
-        <ul>{thingsList}</ul>
+        <div className="grettingDiv">
+          <p className="pTag"> Greeting: {this.props.greeting} </p>
+          
+          <button
+            className="getThingsBtn"
+            onClick={() => this.props.getThings()}
+          >
+            Will Greet You
+          </button>
+          <br />
+          <ul className="thingsClass">{thingsList}</ul>
+        </div>
       </React.Fragment>
     );
   }
 }
 
 const structuredSelector = createStructuredSelector({
-  things: (state) => state.things,
+  greetings: (state) => state.greetings,
 });
 
 const mapDispatchToProps = { getThings };
