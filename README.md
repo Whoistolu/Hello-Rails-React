@@ -13,11 +13,17 @@
 
 ![1](img/1.png)
 
-## Run Tests
+### Video Presentation
+[Video](https://www.loom.com/share/8f12b4e173804f63a1eeaf334880c2f6)
 
+## Setup
+
+- Clone [Hello-React-Rails Web App](https://github.com/Whoistolu/Hello-Rails-React) on local machine
+- Run 
 ```
 rails s
 ```
+- `Alt` + Click `127.0.0.1:3000` or just visit  `http://127.0.0.1:3000`
 
 ## Author:
 

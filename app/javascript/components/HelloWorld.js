@@ -8,7 +8,6 @@ export const GET_THINGS_REQUEST = "GET_THINGS_REQUEST";
 export const GET_THINGS_SUCCESS = "GET_THINGS_SUCCESS";
 
 function getThings() {
-  console.log("getThngs() Action!!");
   return (dispatch) => {
     dispatch({ type: GET_THINGS_REQUEST });
     return fetch(`v1/greetings.json`)
