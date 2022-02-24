@@ -15,6 +15,20 @@
 
 ## Run Tests
 
+## Setup
+
+- Clone [Hello-React-Rails Web App](https://github.com/Whoistolu/Hello-Rails-React) on local machine
+- Run 
+
+```
+bundle install
+```
+```
+yarn
+```
+```
+rails db:migrate db:seed
+```
 ```
 rails s
 ```
