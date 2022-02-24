@@ -13,7 +13,8 @@
 
 ![1](img/1.png)
 
-## Run Tests
+### Video Presentation
+[Video](https://www.loom.com/share/8f12b4e173804f63a1eeaf334880c2f6)
 
 ## Setup
 
@@ -32,6 +33,7 @@ rails db:migrate db:seed
 ```
 rails s
 ```
+- `Alt` + Click `127.0.0.1:3000` or just visit  `http://127.0.0.1:3000`
 
 ## Author:
 
